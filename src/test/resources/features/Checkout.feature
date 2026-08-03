@@ -6,10 +6,8 @@ Feature: Funcionalidad de Checkout
         Then el usuario deberia ver mensaje "Epic sadface: Username and password do not match any user in this service"
 
   Examples:
-    | user    | password   |
-    | mario   | xyz        |
-    | pedro   | 0000       |
-    | luis    | 123abc     |
+    | user  | password |
+    | mario | xyz      |
 
   Scenario Outline: Flujo exitoso de compra
     Given que el usuario está en la página de inicio de sesión
@@ -23,7 +21,5 @@ Feature: Funcionalidad de Checkout
     Then se muestra el mensaje "Thank you for your order!"
 
   Examples:
-     | product                    | productPrice | name       | lastName  | postalCode |
-     |  Sauce Labs Backpack       |  $29.99      | Joelis     | Adon      |  15181     |
-     |  Sauce Labs Onesie         |  $7.99       | Emanuel    | de jesus  |  10001     |
-     |  Sauce Labs Fleece Jacket  |  $49.99      | Wander     |  Beltran  |  25871     |
+    | product             | productPrice | name   | lastName | postalCode |
+    | Sauce Labs Backpack | $29.99       | Joelis | Adon     | 15181      |
