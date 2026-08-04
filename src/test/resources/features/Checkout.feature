@@ -9,6 +9,7 @@ Feature: Funcionalidad de Checkout
     | user  | password |
     | mario | xyz      |
     | jose  | xyz      |
+    | pedro | xyz      |
 
 #  Scenario Outline: Flujo exitoso de compra
 #    Given que el usuario está en la página de inicio de sesión
